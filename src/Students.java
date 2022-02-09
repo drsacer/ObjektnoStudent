@@ -2,7 +2,17 @@ public class Students {
 
     String first_name;
     private String last_name;
-    private String year;
+    private int year;
+
+    public Students(String first_name, String last_name, int year) {
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.year = year;
+    }
+
+    public Students(){
+
+    }
 
     public String getFirst_name() {
         return first_name;
@@ -20,11 +30,11 @@ public class Students {
         this.last_name = last_name;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(int year) {
         this.year = year;
     }
 }

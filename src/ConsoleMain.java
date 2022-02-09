@@ -1,10 +1,14 @@
 public class ConsoleMain {
     public static void main(String[] args) {
 
-        // upis imena koristeći varijablu i setter
-        // private varijabla u Students se ne može dohvatiti direktno nego preko settera
+        // 2 - različiti konstruktori, defaultni
 
-        Students ivan = new Students();
+        Students ivan = new Students("Ivan", "Sacer",5);
+        Students mona = new Students();
+
+        // 1 - upis imena koristeći varijablu i setter
+        //     private varijabla u Students se ne može dohvatiti direktno nego preko settera
+
         ivan.first_name = "Mona";
         ivan.setFirst_name("Ivan");
 
