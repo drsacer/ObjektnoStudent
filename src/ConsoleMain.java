@@ -36,8 +36,19 @@ public class ConsoleMain {
 
         System.out.println(mona);
         System.out.println(ivan);
+        System.out.println();
+
+        //  5- Course klasa - napraviti klasu Course s varijablama, kontruktorom, set i get
+
+        Course java = new Course("Java",160);
+        Course web = new Course("Web",120);
+
+        java.isStarted(true);
+        System.out.println(java);
+
+        // 6 - dodavanje kursa studentu
+        ivan.course = java;
+        System.out.println(ivan);
+
     }
-
-    //  5- Course klasa - napraviti klasu Course s varijablama, kontruktorom, set i get
-
 }

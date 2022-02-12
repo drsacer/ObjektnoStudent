@@ -1,10 +1,9 @@
-import org.w3c.dom.ls.LSOutput;
-
 public class Students {
 
     String first_name;
     private String last_name;
     private int year;
+    Course course;
 
     public Students(String first_name, String last_name, int year) {
         this.first_name = first_name;
@@ -55,6 +54,7 @@ public class Students {
                 "first_name='" + first_name + '\'' +
                 ", last_name='" + last_name + '\'' +
                 ", year=" + year +
+                ", course=" + course +
                 '}';
     }
 }

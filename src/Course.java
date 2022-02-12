@@ -2,6 +2,8 @@ public class Course {
 
     private String name;
     private int duration;
+    private boolean isStarted;
+
 
     public Course(String name, int duration) {
         this.name = name;
@@ -22,5 +24,19 @@ public class Course {
 
     public void setDuration(int duration) {
         this.duration = duration;
+    }
+
+    public boolean isStarted(boolean isStarted) {
+        this.isStarted = isStarted;
+        return isStarted;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "name='" + name + '\'' +
+                ", duration=" + duration +
+                ", isStarted=" + isStarted +
+                '}';
     }
 }
