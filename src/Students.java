@@ -1,3 +1,5 @@
+import org.w3c.dom.ls.LSOutput;
+
 public class Students {
 
     String first_name;
@@ -36,5 +38,14 @@ public class Students {
 
     public void setYear(int year) {
         this.year = year;
+    }
+
+    public void yearUp (){
+        if (year != 4){
+            year++;
+        }
+        else  {
+            System.out.println("Student " + first_name + " " + last_name +  " je na završnoj godini");
+        }
     }
 }

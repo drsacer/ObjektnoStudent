@@ -3,7 +3,7 @@ public class ConsoleMain {
 
         // 2 - različiti konstruktori, defaultni
 
-        Students ivan = new Students("Ivan", "Sacer",5);
+        Students ivan = new Students("Ivan", "Sacer",4);
         Students mona = new Students();
 
         // 1 - upis imena koristeći varijablu i setter
@@ -11,8 +11,24 @@ public class ConsoleMain {
 
         ivan.first_name = "Mona";
         ivan.setFirst_name("Ivan");
+        // ivan.year = 5;  ne može jer je year private
 
         System.out.println(ivan.getFirst_name());
+
+        // 3 - pozivanje metoda - void i s povratnom vrijednošću (get) , te slanje argumeneta (set)
+
+        // Mona nije instancirana preko konstruktora
+        mona.setYear(1);
+        mona.setFirst_name("Mona");
+        mona.yearUp();
+        mona.yearUp();
+        mona.yearUp();
+        mona.yearUp();
+
+        ivan.yearUp();
+
+        System.out.println("Mona - godina studija:" + mona.getYear());
+        System.out.println("Ivan - godina studija:" + ivan.getYear());
     }
 
 }
