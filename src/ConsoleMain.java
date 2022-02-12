@@ -14,6 +14,7 @@ public class ConsoleMain {
         // ivan.year = 5;  ne može jer je year private
 
         System.out.println(ivan.getFirst_name());
+        System.out.println();
 
         // 3 - pozivanje metoda - void i s povratnom vrijednošću (get) , te slanje argumeneta (set)
 
@@ -29,6 +30,12 @@ public class ConsoleMain {
 
         System.out.println("Mona - godina studija:" + mona.getYear());
         System.out.println("Ivan - godina studija:" + ivan.getYear());
+        System.out.println();
+
+        // 4- toString metoda
+
+        System.out.println(mona);
+        System.out.println(ivan);
     }
 
 }

@@ -48,4 +48,13 @@ public class Students {
             System.out.println("Student " + first_name + " " + last_name +  " je na završnoj godini");
         }
     }
+
+    @Override
+    public String toString() {
+        return "Students{" +
+                "first_name='" + first_name + '\'' +
+                ", last_name='" + last_name + '\'' +
+                ", year=" + year +
+                '}';
+    }
 }
