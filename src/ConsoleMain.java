@@ -38,4 +38,6 @@ public class ConsoleMain {
         System.out.println(ivan);
     }
 
+    //  5- Course klasa - napraviti klasu Course s varijablama, kontruktorom, set i get
+
 }
